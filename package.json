@@ -1,0 +1,32 @@
+{
+  "name": "nodebb-plugin-notification-steambot",
+  "version": "0.0.1",
+  "description": "Steam Bot to push notifications to the end user through Steam Messenger ",
+  "main": "library.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mstan/nodebb-plugin-notification-steambot"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin"
+  ],
+  "author": {
+    "name": "Matthew Stanley",
+    "email": "git@1379.tech"
+  },
+  "nbbpm": {
+    "compatibility": "^0.6.0"
+  },
+  "license": "",
+  "bugs": {
+    "url": ""
+  },
+  "readme": "Steam Bot to push notifications to the end user through Steam Messenger ",
+  "readmeFilename": "README.md",
+  "_id": "nodebb-notification-steambot@0.0.1",
+  "_from": "nodebb-notification-steambot@~0.0.1"
+}

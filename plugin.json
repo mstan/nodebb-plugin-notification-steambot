@@ -1,0 +1,18 @@
+{
+	"id": "nodebb-plugin-steam-bubbles",
+	"name": "Steam Bubbles",
+	"description": "Add Steam Bubbles to user posts",
+	"url": "https://github.com/mstan",
+	"library": "./library.js",
+	"hooks": [
+		{
+			"hook": "static:app.load", "method": "init"
+		},
+		{
+			"hook": "action:notification.pushed", "method": "sendNotification"
+		}
+	],
+	"staticDirs": {
+		"config": "./config"
+	}
+}
