@@ -56,7 +56,7 @@ var newFollowNotify = function(steamID,followingUser,siteURL) {
 	client.chatMessage(steamID, followingUser + ' is now following you!' + ' (Check your notifications at (' + siteURL + ' )'  );
 }
 
-var newUpvoteNotify = function(steamID,upvotingUser,topicName) {
+var newUpvoteNotify = function(steamID,upvotingUser,topicName,siteURL) {
 	client.chatMessage(steamID, upvotingUser + ' has upvoted your post in "' + topicName + '"' + '(Check your notifications at (' + siteURL + ' )'  );
 }
 
@@ -113,7 +113,7 @@ steamBot.sendNotification = function(response, callback) {
 						var upvotingUser = bodyShort[1];
 						var topicName = bodyShort[2];
 
-						newUpvoteNotify(userSteamID,upvotingUser,topicName);
+						newUpvoteNotify(userSteamID,upvotingUser,topicName,siteURL);
 						break;
 					default: 
 						break;
